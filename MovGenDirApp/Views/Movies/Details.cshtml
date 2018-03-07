@@ -1,0 +1,87 @@
+﻿@model MovGenDirApp.Models.Movie
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<div>
+    <div class="row row-1">
+        <div class="col-4">
+            <h2>Details</h2>
+        </div>
+        <div class="col-4">
+            <h4>Movie</h4>
+        </div>
+    </div>
+    <hr />
+
+        <div class="row">
+            <div class="col-md-2 col-sm-4">
+                @Html.DisplayNameFor(model => model.Director.Name)
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+                @Html.DisplayFor(model => model.Director.Name)
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2 col-sm-4">
+                @Html.DisplayNameFor(model => model.Genre.Type)
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+                @Html.DisplayFor(model => model.Genre.Type)
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2 col-sm-4">
+                @Html.DisplayNameFor(model => model.Title)
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+                @Html.DisplayFor(model => model.Title)
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2 col-sm-4">
+                @Html.DisplayNameFor(model => model.ReleaseDate)
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+                @Html.DisplayFor(model => model.ReleaseDate)
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2 col-sm-6">
+                @Html.DisplayNameFor(model => model.RTScore)
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+                @Html.DisplayFor(model => model.RTScore)
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2 col-sm-4">
+                @Html.DisplayNameFor(model => model.Rating)
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+                @Html.DisplayFor(model => model.Rating)
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2 col-sm-4">
+                @Html.DisplayNameFor(model => model.WonAward)
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+                @Html.DisplayFor(model => model.WonAward)
+            </div>
+        </div>
+
+        <p>
+            @Html.ActionLink("Edit", "Edit", new { id = Model.MovieID }) |
+            @Html.ActionLink("Back to List", "Index")
+        </p>
+    </div>
+

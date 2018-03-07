@@ -1,0 +1,40 @@
+﻿@model IEnumerable<MovGenDirApp.Models.Movie>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<div class="container container-2">
+    <div class="row row-2">
+        <div class="col-sm-6 col-md-4" id="title">
+            <h2>Movies</h2>
+        </div>
+        <div class="col-sm-6 col-md-4 create-link">
+
+
+            <p>
+                @Html.ActionLink("Create New", "Create")
+            </p>
+        </div>
+    </div>
+    @foreach (var item in Model)
+    {
+        <div class="col-sm-4 col-md-3 card-whole">
+            <div class="card card-movie">
+                <img class="card-img-top" src="https://picsum.photos/200/300/?random" alt="Card image" style="width:100%">
+                <div class="card-body">
+                    <h4>  @Html.DisplayFor(modelItem => item.Title)</h4>
+                    <p>@Html.DisplayFor(modelItem => item.Director.Name)</p>
+                    <p>@Html.DisplayFor(modelItem => item.Genre.Type)</p>
+                    <p>@Html.DisplayFor(modelItem => item.RTScore)</p>
+                    <a>
+                        @Html.ActionLink("Edit", "Edit", new { id = item.MovieID }) |
+                        @Html.ActionLink("Details", "Details", new { id = item.MovieID }) |
+                        @Html.ActionLink("Delete", "Delete", new { id = item.MovieID })
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    }
+</div>

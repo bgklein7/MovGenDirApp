@@ -1,0 +1,154 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+@keyframes carouselAnim {
+    0% {
+        transform: translateX(100%) rotatey(0) scale(1.2, 1.2);
+        transform-origin: center center;
+        z-index: 10;
+    }
+
+    27% {
+        transform: translateX(100%) rotatey(0) scale(1.2, 1.2);
+        transform-origin: center center;
+        z-index: 10;
+    }
+
+    33.33333% {
+        transform: translateX(0) translateY(0) rotatey(10deg) scale(0.8,1);
+        transform-origin: left center;
+        z-index: 5;
+    }
+
+    60% {
+        transform: translateX(0) translateY(0) rotatey(10deg) scale(0.8,1);
+        transform-origin: left center;
+        z-index: 5;
+    }
+
+    66.666666% {
+        transform: translateX(200%) translateY(0) rotatey(-10deg) scale(0.8,1);
+        transform-origin: right center;
+        z-index: 5;
+    }
+
+    93% {
+        transform: translateX(200%) translateY(0) rotatey(-10deg) scale(0.8,1);
+        transform-origin: right center;
+        z-index: 5;
+    }
+
+    100% {
+        transform: translateX(100%) rotatey(0) scale(1.2, 1.2);
+        transform-origin: center center;
+        z-index: 10;
+    }
+}
+
+.carousel__container {
+    width: 100%;
+    max-width: 960px;
+    perspective: 300px;
+    perspective-origin: 50% 60%;
+    min-height: 14em;
+    margin: 3em auto;
+}
+
+.carousel__item {
+    position: absolute;
+    width: 33%;
+    padding-bottom: 19%;
+    animation-name: carouselAnim;
+    /* transform: translateX(0) rotatey(50deg); */
+    transform-origin: left center;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+}
+
+    .carousel__item:first-child {
+        animation-delay: -4s;
+    }
+
+    .carousel__item:last-child {
+        animation-delay: -8s;
+    }
+
+.carousel__image {
+    position: absolute;
+    width: 100%;
+    border-radius: 2px;
+}
+.card-body{
+    text-align: center;
+}
+.card-body p{
+    margin-bottom: 0px;    
+}
+.card-body h4{
+    font-family: fantasy;
+    font-weight: bolder;
+}
+.card-movie{
+    width: 200px;
+    border: 2px solid black;
+}
+.card-whole {
+    margin-bottom: 15px;
+}
+body{
+    background-image: url('ImageRepository/film-strip-template-photoshop_177946.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.navbar{
+    margin-bottom: 50px;
+}
+.row-1{
+    margin-top: 75px;
+}
+ul a{
+    color: white!important;
+    font-weight: bold;
+}
+ul a:hover{
+background-color: transparent!important;
+color: yellow!important;
+border: none;
+}
+a.navbar-brand{
+    color: red!important;
+    font-weight: bold;
+    background-color: black;
+}
+a.navbar-brand:hover{
+    color: red!important;
+    font-size: 36px;
+}
+.container-2 h2{
+    margin-top: 75px;
+}
+.create-link p{
+    margin-top: 75px;
+    font-size: 22px;
+}
