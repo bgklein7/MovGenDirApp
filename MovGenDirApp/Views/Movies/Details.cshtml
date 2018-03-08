@@ -15,73 +15,72 @@
     </div>
     <hr />
 
-        <div class="row">
-            <div class="col-md-2 col-sm-4">
-                @Html.DisplayNameFor(model => model.Director.Name)
-            </div>
-
-            <div class="col-md-3 col-sm-6">
-                @Html.DisplayFor(model => model.Director.Name)
+    <div class="row">
+        <div class="col-md-6 col-sm-offset-0 video">
+            <div class="jumbotron">
+                <iframe width="400" height="300" src="https://www.youtube.com/embed/N0gqIn09lbg"></iframe>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-2 col-sm-4">
-                @Html.DisplayNameFor(model => model.Genre.Type)
+        <div class="col-md-6 col-sm-12 topic">
+            <div class="row nested-row">
+                <div class="col-lg-6 nested-col">
+                    @Html.DisplayNameFor(model => model.Director.Name)
+                </div>
+                <div class="col-lg-6 nested-col">
+                    @Html.DisplayFor(model => model.Director.Name)
+                </div>
             </div>
-
-            <div class="col-md-3 col-sm-6">
-                @Html.DisplayFor(model => model.Genre.Type)
+            <div class="row nested-row">
+                <div class="col-lg-6 nested-col">
+                    @Html.DisplayNameFor(model => model.Genre.Type)
+                </div>
+                <div class="col-lg-6 nested-col">
+                    @Html.DisplayFor(model => model.Genre.Type)
+                </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-md-2 col-sm-4">
-                @Html.DisplayNameFor(model => model.Title)
+            <div class="row nested-row">
+                <div class="col-lg-6 nested-col">
+                    @Html.DisplayNameFor(model => model.Title)
+                </div>
+                <div class="col-lg-6 nested-col">
+                    @Html.DisplayFor(model => model.Title)
+                </div>
             </div>
-
-            <div class="col-md-3 col-sm-6">
-                @Html.DisplayFor(model => model.Title)
+            <div class="row nested-row">
+                <div class="col-lg-6 nested-col">
+                    @Html.DisplayNameFor(model => model.ReleaseDate)
+                </div>
+                <div class="col-lg-6 nested-col">
+                    @Html.DisplayFor(model => model.ReleaseDate)
+                </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-md-2 col-sm-4">
-                @Html.DisplayNameFor(model => model.ReleaseDate)
+            <div class="row nested-row">
+                <div class="col-lg-6 nested-col">
+                    @Html.DisplayNameFor(model => model.RTScore)
+                </div>
+                <div class="col-lg-6 nested-col">
+                    @Html.DisplayFor(model => model.RTScore)
+                </div>
             </div>
-
-            <div class="col-md-3 col-sm-6">
-                @Html.DisplayFor(model => model.ReleaseDate)
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-2 col-sm-6">
-                @Html.DisplayNameFor(model => model.RTScore)
-            </div>
-
-            <div class="col-md-3 col-sm-6">
-                @Html.DisplayFor(model => model.RTScore)
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-2 col-sm-4">
-                @Html.DisplayNameFor(model => model.Rating)
-            </div>
-
-            <div class="col-md-3 col-sm-6">
-                @Html.DisplayFor(model => model.Rating)
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-2 col-sm-4">
-                @Html.DisplayNameFor(model => model.WonAward)
-            </div>
-
-            <div class="col-md-3 col-sm-6">
-                @Html.DisplayFor(model => model.WonAward)
+            <div class="row nested-row">
+                <div class="col-lg-6 nested-col">
+                    @Html.DisplayNameFor(model => model.WonAward)
+                </div>
+                <div class="col-lg-6 nested-col">
+                    @Html.DisplayFor(model => model.WonAward)
+                </div>
             </div>
         </div>
-
-        <p>
-            @Html.ActionLink("Edit", "Edit", new { id = Model.MovieID }) |
-            @Html.ActionLink("Back to List", "Index")
-        </p>
     </div>
+    <div class="row">
+        <div class="col-md-6"></div>
+        <div class="col-md-6">
+            <p>
+                @Html.ActionLink("Edit", "Edit", new { id = Model.MovieID }) |
+                @Html.ActionLink("Back to List", "Index")
+            </p>
+        </div>
+    </div>
+    </div>
+
 

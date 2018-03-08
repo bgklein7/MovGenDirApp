@@ -6,16 +6,19 @@
 
 <div class="container container-2">
     <div class="row row-2">
-        <div class="col-sm-6 col-md-4" id="title">
+
+        <div class="col-sm-6 col-md-2" id="title">
             <h2>Movies</h2>
         </div>
-        <div class="col-sm-6 col-md-4 create-link">
+        <div class="col-sm-offset-0 col-md-8"></div>
+        <div class="col-sm-6 col-md-2 create-link">
 
 
             <p>
                 @Html.ActionLink("Create New", "Create")
             </p>
         </div>
+
     </div>
     @foreach (var item in Model)
     {

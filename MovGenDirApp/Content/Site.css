@@ -147,8 +147,46 @@ a.navbar-brand:hover{
 }
 .container-2 h2{
     margin-top: 75px;
+    margin-bottom: 0px;
 }
 .create-link p{
     margin-top: 75px;
+    margin-bottom: 0px;
     font-size: 22px;
 }
+.topic{
+    font-weight: bolder;
+}
+.jumbotron{
+    height: 175px;
+    width: 200px;
+    padding: 0px!important;
+    margin: 0px!important;
+}
+.slide {
+    max-width: 1170px;
+    height: 300px;
+    padding: 75px;
+    text-align: center;
+    background-image: url('ImageRepository/Criterion-Collection.jpg');
+
+}
+.director-headers{
+    margin-top: 75px;
+
+}
+.carousel-inner h3{
+    color: white!important;
+    font-weight: bolder;
+    font-size: 64px!important;
+}
+.carousel-inner{
+    color: white!important;
+    font-weight: bolder;
+    font-size: 64px!important;
+}
+    .carousel-inner a {
+        color: white!important;
+        font-weight: bolder;
+        font-size: 64px !important;
+    }:
